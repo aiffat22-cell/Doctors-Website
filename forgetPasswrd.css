@@ -1,0 +1,67 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  .forgot-password-form {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+  }
+  
+  .forgot-password-form h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .forgot-password-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 3px;
+  }
+  
+  .forgot-password-form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #0764f9;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+  }
+  
+  .back-to-login {
+    display: block;
+    margin-top: 10px;
+    color: #0764f9;
+    text-decoration: none;
+  }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 

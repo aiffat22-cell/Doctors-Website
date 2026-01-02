@@ -1,0 +1,76 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #007bff;
+    text-align: center;
+}
+
+.records-container table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.records-container th,
+.records-container td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.records-container th {
+    background-color: #f8f9fa;
+    font-weight: bold;
+    text-align: left;
+}
+
+.records-container tr:hover {
+    background-color: #f1f1f1;
+}
+
+.records-container img {
+    max-width: 100px;
+    height: auto;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.8);
+}
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 800px;
+    padding: 20px;
+}
+.modal img {
+    width: 100%;
+    height: auto;
+}
+.close {
+    color: #ccc;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+}

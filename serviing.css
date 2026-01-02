@@ -1,0 +1,118 @@
+/* Import the funky font */
+@font-face {
+    font-family: 'FunkyFont';
+    src: url('path-to-funky-font.ttf');
+    /* Add additional font formats if necessary */
+}
+
+/* Reset some default styles */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.4;
+    background-color: #f4f4f4;
+}
+
+
+
+/* Main content styles */
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+}
+
+.services {
+    background-color: #fff;
+    padding: 40px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.services h2 {
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+}
+
+.service {
+    text-align: center;
+    margin-bottom: 40px;
+    flex: 0 0 33.33%;
+    padding: 0 20px;
+    box-sizing: border-box;
+}
+
+.service-box {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 2px 4px rgba(1, 37, 134, 0.901);
+    transition: transform 0.3s ease;
+}
+
+.service-box:hover {
+    transform: translateY(-5px);
+}
+
+.service img {
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.service img:hover {
+    transform: rotateY(180deg);
+}
+
+.service h3 {
+    font-size: 24px;
+    margin-bottom: 26px;
+    text-transform: uppercase;
+}
+
+.service p {
+    margin-bottom: 10px;
+    color: #016e82;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #f3f0f1;
+    color: #0764f9;
+    text-decoration: none;
+    font-size: 16px;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #aefc1c92;
+}
+
+
+
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+    .service {
+        flex: 0 0 100%;
+    }
+
+    .service-box {
+        margin: 0 auto;
+        max-width: 400px;
+    }
+}
