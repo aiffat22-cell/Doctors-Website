@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display Image</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .container {
+            background-color: #fff;
+            padding: 20px 40px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f4f4f4;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto;
+        }
+
+        p {
+            text-align: center;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <table>
+            <tr>
+                <th>Field</th>
+                <th>Value</th>
+            </tr>
+            <tr>
+                <td>Name</td>
+                <td>{{ name }}</td>
+            </tr>
+            <tr>
+                <td>Email</td>
+                <td>{{ email }}</td>
+            </tr>
+            <tr>
+                <td>Photo</td>
+                <td>
+                    {% if image_data %}
+                        <img src="data:image/jpeg;base64,{{ image_data }}" alt="Uploaded Image">
+                    {% else %}
+                        <p>No image available</p>
+                    {% endif %}
+                </td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

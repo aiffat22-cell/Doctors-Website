@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap4.min.css') }}">
+        <link rel="stylesheet" href="{{ url_for('static', filename='css/tabledesign.css') }}">
+    
+    
+</head>
+
+<body>
+<div class="container">
+    <h2>Appointments</h2>
+    
+    <table class="table table-striped mt-3">
+        <thead>
+            <tr>
+                <th>Email</th>
+                <th>phone number</th>
+                <th>Visit date</th>
+                <th>status</th>
+                
+            </tr>
+        </thead>
+        <tbody>
+            {% for Patient in  Patients %}
+            <tr>
+                <td>{{ Patient.email }}</td>
+                <td>{{ Patient.phone }}</td>
+                <td>{{ Patient.visitday.strftime('%Y-%m-%d') }}</td>
+                <td>{{ Patient.status }}</td>
+                <td>
+                    <a href="/appointments/update/{{ Patient.id }}" class="btn btn-primary">Edit</a>
+                    <form action="/appointments/delete/{{ Patient.id }}" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+</body>
+</html>
+

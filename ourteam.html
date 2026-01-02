@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>our team </title>
+    <link rel="stylesheet" href="../static/css/ourteam.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  <!--TOPBARSTART-->
+  <div class="flex-container">
+    <div class="column1">
+        <div class="contact-info">
+          <a class="mediastyle" href="">  <i class="fas fa-phone-alt"></i> +961 3 891 536</a>
+            <span>|</span>
+            <a class="mediastyle" href=""><i class="fas fa-envelope"></i> kallista@gmail.com</a>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="social-media">
+            <a class="mediastyle" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-instagram"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-twitter"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+    <!-- TopBarEnd -->
+
+   <!--NavBarStart-->
+    
+   <div class="container">
+    <div class="navbar">
+        <div class="logo">
+            <img src="../image/KALLISTA (1).png">
+            <span class="clinic-name"> Kallista</span>
+        </div>
+        <button class="toggle-menu-btn" aria-label="Toggle Menu">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="./About.html">About</a>
+            <a href="./servicing.html">Services</a>
+            <a href="./pricing.html">Pricing</a>
+           
+            <li>
+                <a href="#">PAGES</a>
+                <i class='bx bxs-chevron-down htmlcss-arrow arrow '></i>
+                <ul class="htmlCss-sub-menu sub-menu">
+                  <li><a href="./ourteam.html">Team</a></li>
+                  <li><a href="submissions.html">submissions to you</a></li>
+                  <li><a href="./login.html">login</a></li>
+                  
+                    </ul>
+                  </li>
+                </ul>
+              </li>
+                
+            <a href="./contact.html">Contact</a>
+        </div>
+    </div>
+</div>
+
+<!--NAVBAREND-->
+</head>
+<body>
+
+<!--Our Team Start-->
+<div class="ourteam">
+    <button class="tarrow tleft-arrow">&#10094;</button>
+    <div class="Slide">
+        <div class="timage-container">
+            <img id="teamImage" src="../image/team-1 .jpg">
+        </div>
+        <div class="tcontent">
+            <h4 id="name">Dr.Mostafa Al-Haidari</h4>
+            <h6 id="designation">Dental Doctor</h6>
+            <h4 id="description">Your ideal for great teeth</h4>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+               
+            </div>
+        </div>
+    </div>
+    <button class="tarrow tright-arrow">&#10095;</button>
+</div>
+<!--Our Team End-->
+
+<!--FOOTER START-->
+
+    <footer class="footer">
+        <div class="footer-column">
+            <h3 class="footer-header">Get in Touch</h3>
+            <div class="footer-info">
+                <i class="fas fa-map-marker-alt"></i>
+                <span>Chiyah, Main Road Strert</span>
+            </div>
+            <div class="footer-info">
+                <i class="fas fa-envelope"></i>
+                <span>kallista@gmail.com</span>
+            </div>
+            <div class="footer-info">
+                <i class="fas fa-phone"></i>
+                <span>+961 3 891 654</span>
+            </div>
+        </div>
+    
+        <div class="footer-column">
+            <h3 class="footer-header">Quick Links</h3>
+            <ul class="footer-links">
+                <li><a href="./index.html"> > Home</a></li>
+                <li><a href="./About.html"> > About</a></li>
+               
+                <li><a href="./pricing.html">  > Pricing</a></li>
+              <li><a href="./servicing.html"> Services </a></li>
+                <li><a href="./contact.html">  > Contact Us</a></li>
+            </ul>
+        </div>
+    
+        <div class="footer-column">
+            <h3>Enter Your Email</h3>
+        
+                <form id="emailForm">
+                    <label for="email">Enter your email:</label>
+                    <input type="email" id="email" name="email" required>
+                    <button type="submit">Enter</button>
+                  </form>
+
+                       
+              
+                <h3 class="footer-header"></h3>
+                <div class="follow-us">
+                    <span class="follow-text">Follow Us</span>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook-f"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-twitter"></i></a>
+                <a href=""><i class="fab fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    
+    
+</footer>
+
+<!--FOOTER END-->
+
+<script>
+    let currentIndex = 0;
+    const teamData = [
+        {
+            name: "Dr.Mostafa Al-Haidari",
+            designation: "Dental Doctor",
+            description: "Your ideal for great teeth",
+            image:"../image/team-1 .jpg"
+        },
+        {
+            name: "Dr. Nour Atwi ",
+            designation: "Orthodontist",
+            description: "Specialized in braces and teeth alignment",
+            image: "../image/team-2.jpg"
+        },
+        {
+            name: "Dr. Zeinab Al-Haidari ",
+            designation: "Dietitian",
+            description: "Specialized in losing Weight",
+            image: "../image/team-3.jpg"
+        }
+    ];
+
+    const leftArrow = document.querySelector('.tleft-arrow');
+    const rightArrow = document.querySelector('.tright-arrow');
+
+    leftArrow.addEventListener('click', prevItem);
+    rightArrow.addEventListener('click', nextItem);
+
+    function nextItem() {
+        currentIndex = (currentIndex + 1) % teamData.length;
+        updateContent();
+    }
+
+    function prevItem() {
+        currentIndex = (currentIndex - 1 + teamData.length) % teamData.length;
+        updateContent();
+    }
+
+    function updateContent() {
+        const item = teamData[currentIndex];
+        document.getElementById('name').innerText = item.name;
+        document.getElementById('designation').innerText = item.designation;
+        document.getElementById('description').innerText = item.description;
+        document.getElementById('teamImage').src = item.image;
+    }
+</script>
+
+</body>
+<script src="../static/javascript/project.js"></script>
+</html>

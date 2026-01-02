@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-T9E7mIuSylRvtyAqOAosdwi9OYNzPZcnv+/RclH4fyLImecrvXUx8N1kqi5f+9Xw" crossorigin="anonymous">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+
+    <link rel="stylesheet" href="../static/css/sub.css">
+    <title>Document</title>
+</head>
+<body id="bb">
+    <div class="form-container">
+      <form class="square-form" action="/add_customer" method="POST">
+          <h1 class="title">
+            Choose your product
+              
+          </h1>
+          <div>
+            <img class="logoforform" src="../image/KALLISTA__1_-removebg-preview.png" alt="Company logo">
+        </div>
+          <input type="text"  name="name" placeholder="Name" required>
+          <input type="text" name="last_name" placeholder="Last Name" required>
+          <input type="tel" pattern="[0-9]{8}" name="phone" placeholder="Phone Number" required>
+          <label for="product">Choose a product:</label>
+          <select id="product" name="product" required>
+            <option value="">-- Select an option --</option>
+            <option value="serum">Serum</option>
+            <option value="charcoal-toothpaste">Charcoal Toothpaste</option>
+            <option value="mouthwash">Mouthwash</option>
+            <option value="dental-floss">Dental Floss</option>
+            <option value="skin-protection-creams">Skin Protection Creams</option>
+            <option value="facial-scrub">Facial Scrub</option>
+            
+          </select>
+          <br>
+          <span class="payment-icons">
+            <i class="fab fa-cc-visa colored-icon larger-icon" onclick="showInput('visa')"></i>
+            <i class="fab fa-paypal colored-icon larger-icon" onclick="showInput('paypal')"></i>
+            <i class="fab fa-cc-amazon-pay colored-icon larger-icon" onclick="showInput('omt')"></i>
+            <i class="fab fa-cc-mastercard colored-icon larger-icon" onclick="showInput('mastercard')"></i>
+          </span>
+        </span>
+          
+          
+        <div id="payment-input">
+            <input type="text" id="payment-code" style="display: none;" placeholder="Enter Code">
+          </div>
+          
+          <div id="location-input" style="display: none;">
+            <input type="text" id="location" placeholder="Your Google Maps Link or Location">
+          </div>
+          
+          <input type="submit" value="Submit" action="/take_submission">
+          <a href="submissions.html">Show Product</a>
+       
+        </form>
+        
+    </div>
+
+</body>
+<script src="../static/javascript/sub.js"></script>
+</html>

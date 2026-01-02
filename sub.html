@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Customer Data</title>
+  
+    </style>
+</head>
+<body>
+    <h1>Customer Data</h1>
+    <table>
+        <tr>
+            <th>Name</th>
+            <th>Last Name</th>
+            <th>Phone</th>
+            <th>Product</th>
+            <th>Payment Code</th>
+            <th>Location</th>
+            <th>Actions</th>
+        </tr>
+        {% for customer in customers %}
+        <tr>
+            <td>{{ customer.name }}</td>
+            <td>{{ customer.last_name }}</td>
+            <td>{{ customer.phone }}</td>
+            <td>{{ customer.product }}</td>
+            <td>{{ customer.payment_code }}</td>
+            <td>{{ customer.location }}</td>
+            <td>
+                <a href="/cust/edit/{{ customer.id }}" class="btn btn-primary">Edit</a>
+                <form action="/cust/delete/{{ customer.id }}" method="post" style="display:inline;">
+                    <button type="submit" >Delete</button>
+        </td>
+        </tr>
+        {% endfor %}
+    </table>
+   
+</body>
+</html>
+<style>

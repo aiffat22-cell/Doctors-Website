@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Record</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/medicalshow.css') }}">
+    <style>
+        
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Medical Record</h1>
+        <div id="record-details" class="record-details">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Patient Name</th>
+                        <th>Email</th>
+                        <th>Date of Birth</th>
+                        <th>Photo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>{{ record.id }}</td>
+                        <td>{{ record.patient_name }}</td>
+                        <td>{{ record.email }}</td>
+                        <td>{{ record.date_of_birth }}</td>
+                        <td><img src="{{ record.photo_path }}" alt="Photo" style="max-width: 100px;" id="fullScreenImage"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+   
+    <div id="myModal" class="modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="img01">
+    </div>
+
+    <script>
+     
+        var modal = document.getElementById("myModal");
+
+    
+        var img = document.getElementById("fullScreenImage");
+        var modalImg = document.getElementById("img01");
+        img.onclick = function(){
+            modal.style.display = "block";
+            modalImg.src = this.src;
+        }
+
+        var span = document.getElementsByClassName("close")[0];
+        span.onclick = function() {
+            modal.style.display = "none";
+        }
+    </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+

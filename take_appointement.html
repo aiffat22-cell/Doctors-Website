@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Clinic Appointment Form</title>
+    <link rel="stylesheet" href="../static/css/takeappointement.css">
+    <link rel="stylesheet" href="../static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+  </head>
+  <body>
+
+
+
+   
+
+
+
+   <!--TOPBARSTART-->
+   <div class="flex-container">
+    <div class="column1">
+        <div class="contact-info">
+          <a class="mediastyle" href="">  <i class="fas fa-phone-alt"></i> +961 3 891 536</a>
+            <span>|</span>
+            <a class="mediastyle" href=""><i class="fas fa-envelope"></i> kallista@gmail.com</a>
+        </div>
+    </div>
+    <div class="column2">
+        <div class="social-media">
+            <a class="mediastyle" href=""><i class="fab fa-facebook-f"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-instagram"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-twitter"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-linkedin-in"></i></a>
+            <a class="mediastyle" href=""><i class="fab fa-youtube"></i></a>
+        </div>
+    </div>
+</div>
+
+    <!-- TopBarEnd -->
+
+
+  
+ <!--NavBarStart-->
+  
+ <div class="container">
+  <div class="navbar">
+      <div class="logo">
+          <img src="../image/KALLISTA (1).png">
+          <span class="clinic-name"> Kallista</span>
+      </div>
+      <button class="toggle-menu-btn" aria-label="Toggle Menu">
+          <i class="fas fa-bars"></i>
+      </button>
+      <div class="nav-links">
+          <a href="index.html">Home</a>
+          <a href="./About.html">About</a>
+          <a href="./servicing.html">Services</a>
+          <a href="pricing.html">Pricing</a>
+         
+          <li>
+              <a href="#">PAGES</a>
+              <i class='bx bxs-chevron-down htmlcss-arrow arrow '></i>
+              <ul class="htmlCss-sub-menu sub-menu">
+                <li><a href="./ourteam.html">Team</a></li>
+                <li><a href="submissions.html">submissions to you</a></li>
+                <li><a href="./login.html">login</a></li>
+                
+                  </ul>
+                </li>
+              </ul>
+            </li>
+              
+          <a href="./contact.html">Contact</a>
+      </div>
+  </div>
+</div>
+
+<!--NAVBAREND-->
+
+  
+
+
+    <div class="map-container">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3505.021121280848!2d35.5028843!3d33.8597816!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x151f17665db85f49%3A0x978887af4abef202!2sGhobeiry!5e0!3m2!1sen!2sus!4v1677545134050!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+    <div class="form-container">
+      <form action="/submit_appointment" method="post">
+        <label for="doctor">Doctor:</label>
+        <select name="doctor" id="doctor">
+          <option value="dentist1">Dr.Mustapha Alhaidari- Dentist</option>
+          
+          <option value="dietitian">Dietitian Zeinab Najem</option>
+          <option value="skin_dr">Dermatologist - Dr Jawad hashimi </option>
+        </select>
+        <label for="visit_date">Visit Date:</label>
+        <input type="date" name="visit_date" id="visit_date" required>
+
+        <label for="visit_day">Visit Day:</label>
+        <input type="text" name="visit_day" id="visit_day" placeholder="e.g. Monday" required>
+
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" required>
+
+        <label for="phone">Phone Number:</label>
+        <input type="tel" name="phone" id="phone" pattern="[0-9]{8}" required>
+
+        <label for="patient_status">Patient Status:</label>
+        <select name="patient_status" id="patient_status">
+          <option value="new">New</option>
+          <option value="old">Old</option>
+        </select>
+
+        <input type="submit" value="Submit Appointment">
+
+        
+      </form>
+    </div>
+  </body>
+
+</html>

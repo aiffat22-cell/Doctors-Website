@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Edit Customer</title>
+</head>
+<body>
+    <h1>Edit Customer</h1>
+    <form method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" value="{{ customer.name }}" required>
+        <br>
+        <label for="last_name">Last Name:</label>
+        <input type="text" id="last_name" name="last_name" value="{{ customer.last_name }}" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="text" id="phone" name="phone" value="{{ customer.phone }}" required>
+        <br>
+        <label for="product">Product:</label>
+        <input type="text" id="product" name="product" value="{{ customer.product }}" required>
+        <br>
+        <label for="payment_code">Payment Code:</label>
+        <input type="text" id="payment_code" name="payment_code" value="{{ customer.payment_code }}">
+        <br>
+        <label for="location">Location:</label>
+        <input type="text" id="location" name="location" value="{{ customer.location }}">
+        <br>
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>
